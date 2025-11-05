@@ -57,17 +57,11 @@ pip install streamlit pdfminer.six nltk
 ## 🗂️ Preparação dos dados
 
 1. Coloque seus **PDFs** em `data/raw/`.
-2. Garanta que `stopwords/pt.txt` está salvo em **UTF-8** (sem BOM).
+2. Garanta que `stopwords/stopwords.txt` está salvo
 
 ## 🔧 Geração dos índices
 
 Execute na raiz do projeto (nessa ordem):
-
-```bash
-python src/ingest.py
-python src/preprocess.py
-python src/index.py
-```
 
 Arquivos gerados (exemplos):
 - `storage/docs_raw.json` — metadados e resumos extraídos
