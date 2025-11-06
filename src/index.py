@@ -12,7 +12,9 @@ def build_indexes(processed_json="storage/docs_processed.json",
         "doc_id": d["doc_id"],
         "titulo": d["titulo"],
         "autores": d["autores"],
-        "tot_significativos": d["tot_significativos"]
+        "tot_significativos": d["tot_significativos"],
+        "arquivo": Path(d.get("arquivo", "")).resolve().as_uri() if d.get("arquivo") else "",
+        "resumo": d["resumo"]
     } for d in docs]
     last_doc_id = max(d["doc_id"] for d in docs) if docs else 0
     reg_docid_totpal = { "ultimo_doc_id": last_doc_id }
