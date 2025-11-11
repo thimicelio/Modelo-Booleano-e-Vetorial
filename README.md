@@ -14,7 +14,7 @@ Projeto acadêmico de um Sistema de Recuperação de Informação (SRI) com:
  │   └─ raw/                 # PDFs originais
  ├─ storage/                 # índices e metadados gerados (.json)
  ├─ stopwords/
- │   └─ pt.txt               # sua lista de stopwords (UTF-8)
+ │   └─ stopwords.txt               # lista de stopwords (UTF-8)
  └─ src/
      ├─ preprocess.py        # normaliza/tokeniza/remove stopwords
      ├─ index.py             # TF por doc, dicionário global, DF/IDF
@@ -60,8 +60,6 @@ pip install streamlit pdfminer.six nltk
 2. Garanta que `stopwords/stopwords.txt` está salvo
 
 ## 🔧 Geração dos índices
-
-Execute na raiz do projeto (nessa ordem):
 
 Arquivos gerados (exemplos):
 - `storage/docs_raw.json` — metadados e resumos extraídos
