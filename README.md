@@ -14,7 +14,7 @@ Projeto acadêmico de um Sistema de Recuperação de Informação (SRI) com:
  │   └─ raw/                 # PDFs originais
  ├─ storage/                 # índices e metadados gerados (.json)
  ├─ stopwords/
- │   └─ stopwords.txt               # lista de stopwords (UTF-8)
+ │   └─ stopwords.txt        # lista de stopwords (UTF-8)
  └─ src/
      ├─ preprocess.py        # normaliza/tokeniza/remove stopwords
      ├─ index.py             # TF por doc, dicionário global, DF/IDF
